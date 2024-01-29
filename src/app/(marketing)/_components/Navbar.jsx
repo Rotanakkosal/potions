@@ -37,14 +37,14 @@ const Navbar = () => {
           </>
         )}
 
-        {/* {isAuthenticated && !isLoading && ( */}
+        {isAuthenticated && !isLoading && (
           <>
             <Button variant="ghost" size="sm" asChild>
               <Link href="/documents">Enter Potions</Link>
             </Button>
             <UserButton afterSignOutUrl="/"/>
           </>
-        {/* )} */}
+        )}
         <ModeToggle />
       </div>
     </div>
